@@ -1,8 +1,8 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html>
 	<head>
 		<meta charset="utf-8" />
-        <title>Dot-Game page</title>
+        <title>TG兽吧2015暴雪嘉年华——连线抽奖小游戏</title>
 		<meta name="keywords" content="Dot to dot, whale, Dot, Nathan Gordon, Pascal Van Der Haar" />
 		<meta name="description" content="Play Dot To Dot! The most office fun you can have with your pants on." />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -47,13 +47,22 @@
 				<img id="medal" src="img/img_end.png">
 				<p>您的分数为：<span class="score">0000</span></p>
 				<p>超过了全国<span class="play-percent">00.0%</span>的玩家</p>
-				<p class="ticket"><a href=""> >>购买嘉年华虚拟门票<< </a></p>
+				<a href=""><div class="ticket">购买嘉年华虚拟门票</div></a>
 				<div class="bottom-wrap">
 				<img id="again" src="img/img_play-again.png">
 				<img id="share" src="img/img_share.png">
 				</div>
 				<div class="share-wrap">
-				<p>分享到：<i class="weibo"></i><i class="wechat"></i><i class="yixin"></i></p>
+				<p>分享到：
+				<i class="weibo" onclick="weiboShare()"></i>
+				<i class="wechat" onclick="wechatShare()"></i>
+				<i class="yixin" onclick="yixinShare()"></i></p>
+				</div>
+				<div class="bi-code">
+					<p>分享到微信朋友圈</p>
+					<img src="http://qr.liantu.com/api.php?bg=84A6E9&logo=http://wow.tgbus.com/special/testyu/img/logo1.png&text=http://wow.tgbus.com/special/testyu/c/">
+					<p>打开微信，点击底部的“发现”，<br/>使用“扫一扫”即可将网页分享至朋友圈。</p>
+					<div class="close">X</div>
 				</div>
 			</div>
 		</div>

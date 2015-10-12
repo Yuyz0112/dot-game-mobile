@@ -87,10 +87,10 @@ h4 { font-size: 16px; }
 #finish .score { font-size: 40px; font-weight: bold }
 #finish .play-percent { font-weight: bold; margin: 0 5px 0 5px }
 #finish .next-medal .points { font-size: 25px; font-weight: bold }
-#finish .ticket { font-size: 22px; color: #ffd999; line-height: 40px }
-#finish .ticket:hover { color: #ffcc77 }
-#finish #again { position: relative; z-index: 6; cursor: pointer; display: inline-block; margin-top: 23px}
-#finish #share { position: relative; z-index: 6; cursor: pointer; display: inline-block; margin-top: 23px}
+#finish .ticket { font-size: 22px; color: #2B4F97; line-height: 40px;height: 40px;background: #ffd584;width: 230px;text-align: center;margin:0 auto;opacity: 0.6;font-weight: bold;border: 2px solid #77E6DE }
+#finish .ticket:hover { opacity: 1 }
+#finish #again { position: relative; z-index: 6; cursor: pointer; display: inline-block; margin-top: 10px}
+#finish #share { position: relative; z-index: 6; cursor: pointer; display: inline-block; margin-top: 10px}
 #finish .share-wrap { display: none }
 #finish .share-wrap p{line-height: 30px}
 #finish .share-wrap i { display: inline-block; width: 24px; height: 24px; overflow: hidden; background: url(../img/share_icon.png) no-repeat;transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear; cursor:pointer;margin:0 5px;vertical-align: middle;}
@@ -101,14 +101,18 @@ h4 { font-size: 16px; }
 #finish .share-wrap .weibo:hover { background-position: -25px -25px; }
 #finish .share-wrap .wechat:hover { background-position: -325px -25px; }
 #finish .share-wrap .yixin:hover { background-position: -225px -25px; }
-
+#finish .bi-code{position: absolute;width: 300px;height: 300px;background: #FFF;top: 90px;left: 150px;z-index: 10;border:2px solid #77E6DE;display: none; }
+#finish .bi-code p{color: #111;font-weight: bold;font-size: 16px;line-height: 24px}
+#finish .bi-code img{width: 200px;height: 200px}
+#finish .bi-code .close{position: absolute;top: 2px;right: 2px;width: 24px;height: 24px;border: 2px solid #77E6DE;border-radius: 50%;color: #111;font-weight: bold;font-size: 22px;text-align: center;line-height: 24px;cursor: pointer;}
+#finish .bi-code .close:hover{background: #2B4F97;color: #FFF}
 .dot { background: url(../img/img_dot.png)0 0 no-repeat; position: absolute; z-index: 4; width: 24px; height: 24px; }
 .dot.full { background-image: url(../img/img_dot-full.png); }
 .number { font-family: 'TeXGyreAdventorBold', arial, sans-serif; position: absolute; z-index: 3; width: 24px; text-align: center; }
 #svg { height: 100%; width: 100%; left: 0; top: 0; position: absolute; z-index: 2; }
 .info { overflow: hidden; position: relative; }
-#retry, #again, #share, .share-wrap { opacity: 0.5; -webkit-transition: opacity 0.2s ease-out; -moz-transition: opacity 0.2s ease-out; -o-transition: opacity 0.2s ease-out; transition: opacity 0.2s ease-out; }
-#retry:hover, #again:hover, #share:hover, .share-wrap { opacity: 1; }
+#start .guide,#retry, #again, #share, .share-wrap { opacity: 0.5; -webkit-transition: opacity 0.2s ease-out; -moz-transition: opacity 0.2s ease-out; -o-transition: opacity 0.2s ease-out; transition: opacity 0.2s ease-out; }
+#start .guide,#retry:hover, #again:hover, #share:hover, .share-wrap { opacity: 1; }
 .preload { position: absolute; left: -1000px; top: 0; height: 0px; overflow: hidden; }
 @media only screen and (max-width:480px) {
     #nice { left: 50%; bottom: 10% }
@@ -134,7 +138,7 @@ h4 { font-size: 16px; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-/*Console*/
+/*Console
 #start { display: none }
 #game { display: none }
 #finish { display: block }
