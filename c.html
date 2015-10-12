@@ -1,0 +1,26 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<html>
+	<head>
+		<title>
+			这是子页面
+		</title>
+	</head>
+	<body>
+		<div id="resultDiv" name="resultDiv"></div>
+	</body>
+	<script type="text/javascript">
+			var urlInfo=window.location.href;
+			var argsIndex=urlInfo.indexOf("?");
+			var args=urlInfo.substring((argsIndex+1)).split("&");
+			var argsInfo="";
+			for(i=0;i<args.length;i++){
+				var argResult=args[i].split("=");
+				if(argResult.length==2){
+					argsInfo+="参数名["+argResult[0]+"]";
+					argsInfo+="参数值["+argResult[1]+"]";
+					argsInfo+="<br/>";
+				}						
+			}
+			document.getElementById("resultDiv").innerHTML=argsInfo;
+	</script>
+</html>

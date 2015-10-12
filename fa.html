@@ -1,0 +1,22 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<html>
+	<head>
+		<title>
+			这是父页面
+		</title>
+		<script type="text/javascript">
+			function createNewWindow(){
+				var args=new Array("111","222","333");
+				var url="c.html?得分1="+args[0]+"&得分2="+args[1]+"&得分3="+args[2];
+				var iHeight=100;
+				var iWidth=400;
+				var iTop=(window.screen.availHeight-30-iHeight)/2;
+				var iLeft=(window.screen.availWidth-10-iWidth)/2;
+				window.open(url,"childrenWindow","height="+iHeight+",width="+iWidth+",top="+iTop+",left="+iLeft+",toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no");	
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="点击测试" onclick="createNewWindow()">
+	</body>
+</html>
