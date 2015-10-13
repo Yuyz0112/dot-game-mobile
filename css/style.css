@@ -54,10 +54,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 * { -webkit-user-select: none;  /* Chrome all / Safari all */ -moz-user-select: none;     /* Firefox all */ -ms-user-select: none;      /* IE 10+ */      /* No support for these yet, use at own risk */
 -o-user-select: none; user-select: none; }
-@font-face { font-family: 'TeXGyreAdventorBold'; src: url('../fonts/texgyreadventor-bold-webfont.eot'); src: url('../fonts/texgyreadventor-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/texgyreadventor-bold-webfont.svg') format('svg'), url('../fonts/texgyreadventor-bold-webfont.woff') format('woff'), url('../fonts/texgyreadventor-bold-webfont.ttf') format('truetype'); font-weight: normal; font-style: normal; }
 html, body { height: 100%; }
 body { background: #84A6E9; font-family: "Microsoft Yahei", Arial, sans-serif; color: #fff; position: relative; overflow: hidden; }
-h1, h2, h3, h4, h5, h6 { font-family: 'TeXGyreAdventorBold', arial, sans-serif; letter-spacing: -1px; margin: 0 }
+h1, h2, h3, h4, h5, h6 { font-family: Arial, sans-serif; letter-spacing: -1px; margin: 0 }
 h1 { font-size: 200px; }
 h2 { font-size: 48px; }
 h3 { font-size: 24px; }
@@ -68,12 +67,7 @@ h4 { font-size: 16px; }
 #game .logo { background: url(../img/logo1.png) 0 0 no-repeat; width: 90px; height: 28px; position: absolute; left: 20px; top: 20px; }
 #game .bg { position: absolute; left: 50%; top: 50%; display: none; }
 #game .bg.active { display: block; }
-#game .bg1 { margin: -220px 0 0 -152px; }
-#game .bg2 { margin: -220px 0 0 -152px; }
-#game .bg3 { margin: -220px 0 0 -152px; }
-#game .bg4 { margin: -220px 0 0 -152px; }
-#game .bg5 { margin: -220px 0 0 -152px; }
-#game .bg6 { margin: -220px 0 0 -152px; }
+#game .bg1,#game .bg2,#game .bg3,#game .bg4,#game .bg5,#game .bg6 { margin: -220px 0 0 -152px; }
 #nice { display: none; position: absolute; left: 50%; bottom: 10%; margin-top: 133px; width: 400px; margin-left: -200px; text-align: center; z-index: 6; font-size: 26px; }
 #retry { display: none; position: absolute; z-index: 5; left: 80%; bottom: 50%; margin-top: 160px; margin-left: -80px; cursor: pointer; }
 #timer { position: absolute; left: 80%; bottom: 50%; margin-top: 160px; width: 120px; margin-left: -60px; text-align: center; color: #fee2a0; }
